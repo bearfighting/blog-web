@@ -1,22 +1,20 @@
 <div class="login-container">
-  <div class="logo">
-    B
-  </div>
+  <div class="logo">B</div>
   <form class="login-form">
     <div class="login-header"><h3>Login</h3></div>
     <div class="login-divider"></div>
     <div class="login-input">
       <div class="username input-field">
         <label for="username" class="input-label">Username</label>
-        <input type="text">
+        <input type="text" />
       </div>
       <div class="email input-field">
         <label for="email" class="input-label">Email</label>
-        <input type="email">
+        <input type="email" />
       </div>
       <div class="password input-field">
         <label for="password" class="input-label">Password</label>
-        <input type="password">
+        <input type="password" />
       </div>
       <div class="submit-button">
         <button type="submit">LOG IN</button>
@@ -24,10 +22,12 @@
     </div>
     <div class="login-divider"></div>
     <div class="password-reset">
-      <button class="reset">Forget the password?</button>
+      <button class="reset" (click)="goResetPassword()">
+        Forget the password?
+      </button>
     </div>
     <div class="create-account">
-      <button class="new">Create a new account</button>
+      <button class="new" (click)="goNewAccount()">Create a new account</button>
     </div>
   </form>
 </div>
